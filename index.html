@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Posting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!----------------------- Creating Post ----------------------->
+
+    <div class="box" id="box">
+        <div class="heading">
+            <h3 class="heading1">Create Post</h3>
+        </div>
+        <div class="profile">
+            <a href="https://www.facebook.com/profile.php?id=100074311818687"><img style="width: 50px; height: 50px; border-radius: 50%;" src="/image/344534437_896453441434712_2175706657143609348_n.jpg" alt=""></a>
+        </div>
+        <div class="name">
+            Rizwan Fahim
+        </div>
+        <div class="friends">
+            <i id="friends1" class="fa-solid fa-user-group"></i>
+            <p id="name">Friends <i id="arrow" class="fa-solid fa-sort-down"></i></p>
+        </div>
+        <div class="textarea">
+            <textarea name="" id="textarea" placeholder="What's on your mind, Rizwan Fahim" cols="35" rows="4"></textarea>
+        </div>
+        <div>
+            <img onclick="randomColor()" id="color" class="color" width="35px" height="35px" src="./image/color.png" alt="">
+            <i onclick="smileBackground()" id="smile" class="fa-solid fa-face-smile"></i>
+        </div>
+        <div class="colorpicker">
+            <img onclick="backgroundPicture()" id="pic" style="width: 32px; height: 32px; border-radius: 50%;" src="./image/cross.jpg" alt="">
+            <img onclick="backgroundPicture1()" id="pic1" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color1.webp" alt="">
+            <img onclick="backgroundPicture2()" id="pic2" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color2.jpg" alt="">
+            <img onclick="backgroundPicture3()" id="pic3" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color3.jpg" alt="">
+            <img onclick="backgroundPicture4()" id="pic4" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color4.jpg" alt="">
+            <img onclick="backgroundPicture5()" id="pic5" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color5.jpg" alt="">
+            <img onclick="backgroundPicture6()" id="pic6" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color6 (1).webp" alt="">
+            <img onclick="backgroundPicture7()" id="pic7" style="width: 30px; height: 30px; border-radius: 11px;" src="./image/color7.jpg" alt="">
+        </div>
+        <div class="button">
+            <center><button onclick="redirectToViewpost()" class="btn">Post</button></center>
+        </div>
+    </div>
+
+    <!----------------------- Posted ------------------------->
+
+    <div class="box1" id="box1">
+        <div class="heading2">
+            <h3 class="heading3">Facebook</h3>
+            <i onclick="backToEdit()" id="back-arrow" class="fa-solid fa-arrow-left-long"></i>
+        </div>
+        <div class="profile1">
+            <a href="https://www.facebook.com/profile.php?id=100074311818687"><img style="width: 50px; height: 50px; border-radius: 50%;" src="/image/344534437_896453441434712_2175706657143609348_n.jpg" alt=""></a>
+        </div>
+        <div class="name1">
+            Rizwan Fahim
+        </div>
+        <div class="name2">
+            Now. <i class="fa-solid fa-earth-americas"></i>
+        </div>
+        <div class="body-post">
+            <textarea name="" id="body-post" cols="28" rows="9"></textarea>
+        </div>
+        <div class="like-cmnt-share">
+            <div class="like" id="like" onclick="likeButton()">
+                <i class="fa-solid fa-thumbs-up"></i></i> &nbsp; Like
+            </div>
+            <div class="comment" id="comment">
+                <i class="fa-solid fa-message"></i>&nbsp; Comment
+            </div>
+            <div class="share" id="share" onclick="ShareButton()">
+                <i class="fa-solid fa-share"></i>&nbsp; Share
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+<body>
+
+</html>
